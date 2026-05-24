@@ -1,0 +1,88 @@
+article {
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+
+  > h1 {
+    font-size: 1.6rem;
+    color: $color-nav-bg;
+    border-bottom: 3px solid $color-accent;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  > p {
+    margin-bottom: 1rem;
+    color: $color-text;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: $color-link;
+    margin-top: 1.75rem;
+    margin-bottom: 0.6rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid $color-accent;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    color: $color-nav-bg;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  section {
+    margin-top: 1.5rem;
+
+    p {
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid $color-border;
+    margin: 1.25rem 0;
+  }
+
+  ul {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+  }
+}
+
+section#contact {
+  @include card-box($color-contact-bg, $color-contact-border);
+  border-left: 5px solid $color-link;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.15rem;
+    color: $color-nav-bg;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    font-weight: bold;
+    color: $color-contact-link;
+
+    &:hover {
+      color: $color-link;
+    }
+  }
+}

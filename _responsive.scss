@@ -1,0 +1,31 @@
+@media screen and (max-width: 700px) {
+  header {
+    padding: 1.25rem 1rem 1rem;
+
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+
+  nav ul {
+    flex-direction: column;
+
+    li a {
+      border-right: none;
+      border-bottom: 1px solid $color-header-bg;
+    }
+  }
+
+  main {
+    padding: 0 0.75rem;
+    margin: 1.25rem auto;
+  }
+
+  article {
+    padding: 1.25rem 1rem;
+  }
+
+  section#contact {
+    padding: 1rem;
+  }
+}

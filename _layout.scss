@@ -1,0 +1,92 @@
+header {
+  background-color: $color-header-bg;
+  color: $color-white;
+  padding: 2rem 2rem 1.5rem;
+  border-bottom: 4px solid $color-nav-bg;
+
+  h1 {
+    font-family: $font-body;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $color-footer-text;
+    font-style: italic;
+  }
+}
+
+nav {
+  background-color: $color-nav-bg;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: $color-footer-text;
+        text-decoration: none;
+        font-family: $font-nav-footer;
+        font-size: 0.9rem;
+        letter-spacing: 0.03em;
+        border-right: 1px solid $color-header-bg;
+        @include transition(background-color 0.2s, color 0.2s);
+
+        &:hover,
+        &:focus {
+          background-color: $color-header-bg;
+          color: $color-white;
+        }
+      }
+
+      &:last-child a {
+        border-right: none;
+      }
+    }
+  }
+}
+
+main {
+  max-width: $max-width;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+footer {
+  background-color: $color-nav-bg;
+  color: $color-footer-text;
+  text-align: center;
+  padding: 1.25rem 2rem;
+  font-family: $font-nav-footer;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+
+  p {
+    margin-bottom: 0.35rem;
+  }
+
+  strong {
+    color: $color-white;
+  }
+
+  a {
+    color: $color-footer-text;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
